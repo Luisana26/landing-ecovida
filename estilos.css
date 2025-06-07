@@ -83,14 +83,90 @@ nav a:hover {
     border: radius 5px;
 }
 .producto button {
-margin: top 0.5em;
-padding: 0%;
-color:white;
-border:none;
-border: radius 5px;
+ margin: top 0.5em;
+ padding: 0%;
+ color:white;
+ border:none;
+ border: radius 5px;
 cursor: pointer;
 }
 .producto button:hover {
   background-color: #2e7d32;
 }
+.comparacion table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.comparacion th, .comparacion td {
+  border: 1px solid #a5d6a7;
+  padding: 0.75rem;
+}
+.comparacion tr:nth-child(even) {
+  background-color: #e8f5e9;
+}
 
+.comparacion tr:hover {
+  background-color: #c8e6c9;
+}
+caption {
+  caption-side: top;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.formulario {
+  grid-area: formulario;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #a5d6a7;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #2e7d32;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #1b5e20;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
